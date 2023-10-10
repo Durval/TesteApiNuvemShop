@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "z01V4DbZOngiuG9SFP2MYUY2tHfLZMEoztk1VWoyq5260D/8CNF07cGAvFF/NL27Tu4nSA8lJ5oLR4tE25O6TQ==",
+  "success": true,
+  "projectFilePath": "D:\\Durval\\Visual Studio Projetos\\.Net 6.0\\TesteApiNuvemShop\\TesteApiNuvemShop\\TesteApiNuvemShop.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\durva\\.nuget\\packages\\firebirdsql.data.firebirdclient\\9.1.1\\firebirdsql.data.firebirdclient.9.1.1.nupkg.sha512"
+  ],
+  "logs": []
+}
