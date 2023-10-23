@@ -1,11 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Data.Common;
+﻿using FirebirdSql.Data.FirebirdClient;
 using System.Data;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using FirebirdSql.Data.FirebirdClient;
 
 namespace TesteApiNuvemShop.AcessoDados
 {
@@ -80,8 +74,8 @@ namespace TesteApiNuvemShop.AcessoDados
         }
         #endregion
 
-        #region Consultar dados no banco
-        public DataTable ExecutarConsultar(CommandType commandType, string nomeProcOuTextoSql)
+        #region Consultar dados no banco, retorna DataTable
+        public DataTable ExecutarConsultarDataTable(CommandType commandType, string nomeProcOuTextoSql)
         {
             try
             {
@@ -118,7 +112,8 @@ namespace TesteApiNuvemShop.AcessoDados
         }
         #endregion
 
-        public Object ExecutarConsulta2(CommandType commandType, string nomeProcOuTextoSql)
+        #region Consulta Banco, retorna COUNT, SUM, MIN, MAX e AVG
+        public Object ExecutarConsultaScalar(CommandType commandType, string nomeProcOuTextoSql)
         {
             try
             {
@@ -142,5 +137,6 @@ namespace TesteApiNuvemShop.AcessoDados
                 throw new Exception(error.Message);
             }
         }
+        #endregion
     }
 }

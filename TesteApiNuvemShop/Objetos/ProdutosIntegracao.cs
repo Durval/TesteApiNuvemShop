@@ -9,6 +9,7 @@ namespace TesteApiNuvemShop.Objetos
 {
     public class ProdutosIntegracao
     {
+
         // Root myDeserializedClass = JsonConvert.DeserializeObject<Root>(myJsonResponse);
         public class Description
         {
@@ -27,10 +28,6 @@ namespace TesteApiNuvemShop.Objetos
 
         public class Root
         {
-            public DateTime created_at { get; set; }
-
-            //private string _createdAtString;
-            //private string _updated_atgString;
             public int id { get; set; }
             public Name? name { get; set; }
             public Description? description { get; set; }
@@ -44,15 +41,8 @@ namespace TesteApiNuvemShop.Objetos
             public SeoTitle? seo_title { get; set; }
             public SeoDescription? seo_description { get; set; }
             public object? brand { get; set; }
-            //{
-            //    get { return DateTimeOffset.ParseExact(_createdAtString, "yyyy-MM-ddTHH:mm:ss", CultureInfo.InvariantCulture).DateTime; }
-            //    set { _createdAtString = value.ToString("yyyy-MM-ddTHH:mm:ss"); }
-            //}
-            public DateTime updated_at { get; set; }
-            //{
-            //    get { return DateTimeOffset.ParseExact(_updated_atgString, "yyyy-MM-ddTHH:mm:sszzz", CultureInfo.InvariantCulture).DateTime; }
-            //    set { _updated_atgString = value.ToString("yyyy-MM-ddTHH:mm:sszzz"); }
-            //}
+            public string created_at { get; set; }
+            public string updated_at { get; set; }
             public List<Variant>? variants { get; set; }
             public string? tags { get; set; }
             public List<object>? images { get; set; }
@@ -71,8 +61,6 @@ namespace TesteApiNuvemShop.Objetos
 
         public class Variant
         {
-            //private string _createdAtString;
-            //private string _updated_atgString;
             public int id { get; set; }
             public object? image_id { get; set; }
             public int product_id { get; set; }
@@ -86,22 +74,14 @@ namespace TesteApiNuvemShop.Objetos
             public string? width { get; set; }
             public string? height { get; set; }
             public string? depth { get; set; }
-            public object? sku { get; set; }
+            public string sku { get; set; }
             public List<object>? values { get; set; }
             public object? barcode { get; set; }
             public object? mpn { get; set; }
             public object? age_group { get; set; }
             public object? gender { get; set; }
-            public DateTime created_at { get; set; }
-            //{
-            //    get { return DateTimeOffset.ParseExact(_createdAtString, "yyyy-MM-ddTHH:mm:sszzz", CultureInfo.InvariantCulture).DateTime; }
-            //    set { _createdAtString = value.ToString("yyyy-MM-ddTHH:mm:sszzz"); }
-            //}
-            public DateTime updated_at { get; set; }
-            //{
-            //    get { return DateTimeOffset.ParseExact(_updated_atgString, "yyyy-MM-ddTHH:mm:sszzz", CultureInfo.InvariantCulture).DateTime; }
-            //    set { _updated_atgString = value.ToString("yyyy-MM-ddTHH:mm:sszzz"); }
-            //}
+            public string created_at { get; set; }
+            public string updated_at { get; set; }
             public string? cost { get; set; }
         }
 
